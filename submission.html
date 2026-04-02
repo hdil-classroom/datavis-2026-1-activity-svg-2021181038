@@ -16,7 +16,16 @@
 			height: 500px;
 		}
 
-		/* YOUR CSS CODE WILL GO HERE */
+		.line1 {
+		  fill: #1557a6; 
+		}
+		.line2 {
+		fill: #10a64a; 
+		}
+
+		.line3 {
+		fill: #f07c1a;
+		}	
 
 
 	</style>
@@ -24,13 +33,73 @@
 
 <body>
 	<h1 id="header-title">
-		In-Class Acitivity by REPLACE_WITH_YOUR_NAME
+		In-Class Acitivity by hanna seong
 	</h1>
 
 	<svg id="visualization-activity">
-		<!-- YOUR SVG CODE WILL GO HERE -->
+		<g>
+		<text x="30" y="450">0</text>
+		<text x="30" y="400">10k</text>
+		<text x="30" y="350">20k</text>
+		<text x="30" y="300">30k</text>
+		<text x="30" y="250">40k</text>
+		<text x="30" y="200">50k</text>
+		<text x="30" y="150">60k</text>
+		<text x="30" y="100">70k</text>
+		<text x="30" y="50">80k</text>
+		</g>
+
+		<g>
+		<line x1="80" y1="50" x2="80" y2="450" stroke="gray"/>
+		<line x1="80" y1="450" x2="550" y2="450" stroke="gray"/>
+		</g>
+
+		<g>
+		<text x="20" y="250" transform="rotate(-90 20,250)" font-size="14">Entry Count</text>
+		<text x="250" y="490" font-size="16">Station Name</text>
+		</g>
+
+		<g>
+		<rect class="line2" x="100" y="100" width="50" height="350"/>
+		<text x="100" y="470">Hongdae</text>
+		</g>
+
+		<g>
+		<rect class="line2" x="180" y="150" width="50" height="300"/>
+		<text x="180" y="470">Jamsil</text>
+		</g>
+
+		<g>
+		<rect class="line3" x="260" y="200" width="50" height="250"/>
+		<text x="250" y="470">Express</text>
+		</g>
+
+		<g>
+		<rect class="line1" x="340" y="260" width="50" height="190"/>
+		<text x="340" y="470">Seoul</text>
+		</g>
+
+		<g>
+		<rect class="line2" x="420" y="280" width="50" height="170"/>
+		<text x="420" y="470">Sillim</text>
+		</g>
+
+		<g>
+		<rect class="line2" x="500" y="300" width="50" height="150"/>
+		<text x="500" y="470">Sindorim</text>
+		</g>
 
 
+		<g>
+		<rect class="line1" x="450" y="70" width="15" height="15"/>
+		<text x="470" y="82">Line 1</text>
+
+		<rect class="line2" x="450" y="95" width="15" height="15"/>
+		<text x="470" y="107">Line 2</text>
+
+		<rect class="line3" x="450" y="120" width="15" height="15"/>
+		<text x="470" y="132">Line 3</text>
+		</g>
 	</svg>
 
 </body>
